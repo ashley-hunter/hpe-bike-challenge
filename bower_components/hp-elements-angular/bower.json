@@ -1,0 +1,62 @@
+
+{
+  "name": "hp-elements-angular",
+  "description": "Elements Angular module.",
+  "version": "3.4.0",
+  "keywords": [    
+    "js",
+    "angular",
+    "css",
+    "less",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "homepage": "https://pages.github.hpe.com/caf/elements/",
+  "main": [
+    "dist/js/hpe-elements-angular.js",
+    "dist/css/HPEElements.css",
+    "dist/js/plugins.js",
+    "dist/img/blue_checkboxes.png",
+    "dist/img/blue@2x_checkboxes.png",
+    "dist/img/chosen-sprite.png",
+    "dist/img/chosen-sprite@2x.png",
+    "dist/img/profile_small.png",
+    "dist/img/progress.gif",
+    "dist/img/progress.svg",
+    "dist/img/sort.png",
+    "dist/img/sort_asc.png",
+    "dist/img/sort_desc.png",
+    "dist/fonts/HPEIcons.eot",
+    "dist/fonts/HPEIcons.svg",
+    "dist/fonts/HPEIcons.ttf",
+    "dist/fonts/HPEIcons.woff",
+    "dist/fonts/MetricHPE-Black.eot",
+    "dist/fonts/MetricHPE-Black.woff",
+    "dist/fonts/MetricHPE-Bold.eot",
+    "dist/fonts/MetricHPE-Bold.woff",
+    "dist/fonts/MetricHPE-Light.eot",
+    "dist/fonts/MetricHPE-Light.woff",
+    "dist/fonts/MetricHPE-Regular.eot",
+    "dist/fonts/MetricHPE-Regular.woff",
+    "dist/fonts/MetricHPE-Semibold.eot",
+    "dist/fonts/MetricHPE-Semibold.woff",
+    "dist/fonts/MetricHPE-Thin.eot",
+    "dist/fonts/MetricHPE-Thin.woff"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "jquery-ui": "~1.10.0",
+    "bootstrap": "~3.3.4"
+  },
+  "ignore": [
+    ".*",
+    "docs",
+    "Gruntfile.js",
+    "package.json",
+    "src",
+    "hpeicons"
+  ]
+}
