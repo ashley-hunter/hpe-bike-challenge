@@ -172,7 +172,7 @@ angular.module('app')
     };
 
     function getStreamUrl(stream) {
-      return $sce.trustAsResourceUrl('http://www.ustream.tv/embed/' + stream + '?html5ui&autoplay=true&mute=true');
+      return $sce.trustAsResourceUrl('//www.ustream.tv/embed/' + stream + '?html5ui&autoplay=true&mute=true');
     }
 
     function updateWinningTeam() {
