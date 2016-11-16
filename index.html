@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title page-title="HP Elements Angular"></title>
+
+  <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="hpe-elements/css/HPEElements.css" rel="stylesheet">
+  <link href="css/site.css" rel="stylesheet">
+
+
+</head>
+
+<body class="body-light">
+
+
+  <div class="wrapper">
+
+    <div class="page-content-navbar-top-dark">
+      <div ng-include="'app/views/common/page_header.html'"></div>
+      <div ui-view></div>
+    </div>
+
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDDNCWwiHhTv_nEz5O9YygIvn1MVjwjzlw",
+      authDomain: "bikechallenge-28d0c.firebaseapp.com",
+      databaseURL: "https://bikechallenge-28d0c.firebaseio.com",
+      storageBucket: "bikechallenge-28d0c.appspot.com",
+      messagingSenderId: "437935536008"
+    };
+    var database = firebase.initializeApp(config);
+  </script>
+
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../bower_components/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../bower_components/hp-elements-angular/dist/js/plugins.js"></script>
+
+  <!--  Non angular scripts -->
+  <script src="js/script.js"></script>
+
+  <script src="../bower_components/angular/angular.js"></script>
+
+  <script src="../bower_components/hp-elements-angular/dist/js/hpe-elements-angular.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+
+  <!--  Application -->
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

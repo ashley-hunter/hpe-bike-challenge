@@ -1,0 +1,160 @@
+/* 
+* element-seed-project - v1.4.0 
+* © Copyright 2016  Hewlett-Packard Development Company, L.P
+ */
+.wrapper-content {
+  height: calc(100vh - 122px);
+}
+.row,
+.col-md-8 {
+  height: 100%;
+}
+.video-stream {
+  width: 100%;
+  height: calc(100% - 236px);
+}
+.video-stream .video-header {
+  display: flex;
+  justify-content: space-between;
+}
+.video-stream .video-header .team-name {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333;
+}
+.video-stream .video-header .countdown {
+  margin: 0;
+}
+.video-stream .video-header .countdown .time {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333;
+}
+.video-stream .video-header .countdown .info {
+  margin-left: 0;
+}
+.video-stream .video-player {
+  height: calc(100% - 35px);
+}
+.shameless-plug {
+  position: absolute;
+  bottom: 7px;
+  right: 27px;
+  color: #fff;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+.shameless-plug:focus {
+  color: #fff;
+}
+.shameless-plug:hover {
+  opacity: 1;
+  color: #fff;
+}
+.donate-button {
+  display: flex;
+  width: 100%;
+  min-height: 40px;
+  color: #333;
+  border: 2px solid #01A982;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+  max-width: 350px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.donate-button:hover {
+  color: #333;
+  box-shadow: 0px 0px 0px 1px #01A982;
+}
+.team-stream {
+  margin-top: 25px;
+}
+.team-stream .team-cell {
+  display: inline-block;
+  width: 200px;
+  height: 202px;
+  margin: 0 10px;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+.team-stream .team-cell .team-name {
+  display: inline-block;
+  color: #333;
+  text-transform: uppercase;
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+.team-stream .team-cell .distance {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+.team-stream .team-cell .mini-screen {
+  pointer-events: none;
+  width: 198px;
+  height: 154px;
+}
+.team-stream .team-cell:hover .team-name {
+  border-bottom: 2px solid #01a982;
+}
+.team-stream .team-cell:first-of-type {
+  margin-left: 0;
+}
+.message-board .message-header {
+  margin-top: 0;
+  color: #333;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.message-board .message-list {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  border: 1px solid #ddd;
+  max-width: 350px;
+  margin-bottom: 20px;
+  overflow-y: auto;
+}
+.message-board .message-list .message {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.message-board .message-list .message .message-author {
+  margin: 0;
+  color: #333;
+}
+.message-board .message-list .message .message-date {
+  display: block;
+  margin-top: -2px;
+  margin-bottom: 6px;
+  color: #aaa;
+  font-size: 0.8rem;
+}
+.message-board .message-list .message .message-content {
+  color: #333;
+  font-size: 15px;
+  margin: 0;
+}
+.message-board .message-input {
+  max-width: 350px;
+  margin-bottom: 60px;
+}
+.message-board .message-input .form-group .form-label {
+  opacity: 1;
+  color: #333;
+}
+.update-team-name {
+  color: #333;
+  font-weight: 500;
+  font-size: 1.3rem;
+  opacity: 1;
+}
+.primary-color {
+  color: #01a982;
+}

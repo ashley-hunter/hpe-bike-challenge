@@ -1,0 +1,96 @@
+<div class="wrapper-content container-fluid">
+
+  <div class="row">
+    <div class="col-md-8">
+      <div class="video-stream">
+
+        <div class="video-header">
+
+          <h3 class="team-name">
+            <span ng-bind="vm.activeTeam.name"></span> 
+            <small>
+              <span ng-bind="vm.activeTeam.distance"></span>
+              KM
+            </small>
+          </h3>
+
+          <h3 class="countdown">
+            <span class="time">{{ vm.timeRemaining.hours }}:{{ vm.timeRemaining.minutes }}:{{ vm.timeRemaining.seconds }}</span>
+            <small class="info">remaining</small>
+          </h3>
+        </div>
+
+
+        <div class="video-player">
+          <iframe width="100%" 
+                  height="100%" 
+                  ng-src="{{ vm.activeTeam.stream }}" 
+                  scrolling="no" 
+                  allowfullscreen 
+                  webkitallowfullscreen 
+                  frameborder="0" 
+                  style="border: 0 none transparent;"></iframe>
+        </div>
+
+
+      </div>
+
+      <div class="team-stream">
+
+        <div class="team-cell" ng-repeat="team in vm.teams" ng-click="vm.selectTeam(team)">
+          <h4 class="team-name" ng-bind="team.name"></h4>
+          <p class="distance">{{ team.distance }} KM <span ng-if="team.winning" class="pull-right primary-color"><i class="hpe-icon hpe-trophy"></i> Winning</span></p>
+          <div class="mini-screen">
+            <iframe width="100%" 
+                  height="100%" 
+                  ng-src="{{ team.stream }}"
+                  scrolling="no" 
+                  frameborder="0" 
+                  style="border: 0 none transparent;"></iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+      <div class="message-board">
+
+        <h3 class="message-header">Message Board</h3>
+
+        <div class="message-list">
+
+          <div class="message" ng-repeat="(key, value) in vm.messages">
+            <h4 class="message-author" ng-bind="::value.Author"></h4>
+            <span class="message-date" ng-bind="::value.Date"></span>
+            <p class="message-content" ng-bind="::value.Message"></p>
+          </div>
+
+        </div>
+
+        <div class="message-input">
+          <form role="form">
+            <div class="form-group">
+              <label class="form-label">Name</label>
+              <input type="text" placeholder="Enter name" class="form-control" ng-model="vm.name">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea cols="30" rows="2" class="form-control" ng-model="vm.message"></textarea>
+            </div>
+            <div>
+              <button class="btn button-primary pull-right" ng-click="vm.sendMessage()">Send Message</button>
+            </div>
+          </form> 
+        </div>
+      </div>
+
+      <a href="https://www.justgiving.com/fundraising/hpebikechallengebelfast" class="donate-button">Make a Donation</a>
+
+    </div>
+
+  </div>
+
+</div>
